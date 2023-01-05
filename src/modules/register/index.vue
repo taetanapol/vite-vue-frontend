@@ -4,26 +4,14 @@
       <div class="box-container">
         <h2 class="heading">Create Your Account</h2>
         <div class="form-fields">
-          <input name="name" type="text" placeholder="Full name" v-model="user.name">
-          <small class="error" v-for="(error, index) of v$.user.name.$errors" :key="index">
-            {{ formatModalName(error.$property) }} {{formatMessage(error.$message)}}
-          </small>
-        </div>
-        <div class="form-fields">
-          <input name="email" type="text" placeholder="Email Address" v-model="user.email">
-          <small class="error" v-for="(error, index) of v$.user.email.$errors" :key="index">
+          <input name="username" type="text" placeholder="Username" v-model="user.username">
+          <small class="error" v-for="(error, index) of v$.user.username.$errors" :key="index">
             {{ formatModalName(error.$property) }} {{formatMessage(error.$message)}}
           </small>
         </div>
         <div class="form-fields">
           <input name="password" type="password" placeholder="Password" v-model="user.password" autocomplete="new-password">
           <small class="error" v-for="(error, index) of v$.user.password.$errors" :key="index">
-            {{ formatModalName(error.$property) }} {{formatMessage(error.$message)}}
-          </small>
-        </div>
-        <div class="form-fields">
-          <input name="mobile" type="text" placeholder="Mobile" v-model="user.mobile" v-on:input="formatMobileNumber(user.mobile)" >
-          <small class="error" v-for="(error, index) of v$.user.mobile.$errors" :key="index">
             {{ formatModalName(error.$property) }} {{formatMessage(error.$message)}}
           </small>
         </div>
@@ -46,7 +34,7 @@
 <script>
 import { mapActions } from 'vuex'
 import useVuelidate from '@vuelidate/core'
-import { email, required, minLength } from '@vuelidate/validators'
+import { required, minLength } from '@vuelidate/validators'
 import { formatPhoneNumber, capitalizeFirstLetter, lowercaseFirstLetter } from  '@/config/Utils'
 import router from '@/router'
 
@@ -58,20 +46,16 @@ export default {
   data() {
     return {
       user : {
-        name: '',
-        email: '',
-        password: '',
-        mobile: ''
+        username: '',
+        password: ''
       }
     }
   },
   validations() {
     return {
       user: {
-        name: { required },
-        email: { email, required },
-        password: { required, minLength: minLength(6) },
-        mobile: { required, minLength: minLength(10) }
+        username: { required },
+        password: { required, minLength: minLength(6) }
       }
     }
   },

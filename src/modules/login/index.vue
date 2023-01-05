@@ -4,7 +4,7 @@
       <div class="box-container">
         <h2 class="heading">Login</h2>
         <div class="form-fields">
-          <input name="email" v-model="email" type="text" placeholder="Email Address" autocomplete="email">
+          <input name="email" v-model="email" type="text" placeholder="username" autocomplete="username">
           <small class="error" v-for="(error, index) of v$.email.$errors" :key="index">
             {{ formatModalName(error.$property) }} {{formatMessage(error.$message)}}
           </small>
