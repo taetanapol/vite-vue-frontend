@@ -1,18 +1,34 @@
-# Vue 3 + TypeScript + Vite
+# Vue3 Todo Application
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Simple and Pure Vue3 application with features like User Registration, Login, Vue-Router4, Auth Guard, User Authentication Route, Vuex4, Todo Tutorial with CRUD Operations and Vuelidate form validations without any other external libraries.
 
-## Recommended IDE Setup
+## Project setup
+```
+npm install
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-## Type Support For `.vue` Imports in TS
+## <g-emoji class="g-emoji" alias="tada" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png">🎉 </g-emoji> [Demo Link](https://jebasuthan.github.io/vue3-todo/)  <g-emoji class="g-emoji" alias="tada" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png">🎉</g-emoji>
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Features available in the application:
+1. Perfect Folder Structure
+2. User Registration
+3. Login
+4. Vue Router v4
+5. Auth Guard
+6. Vue Router with Authentication
+7. Vuelidate (Form Validations)
+8. Vuex4
+9. Individual Components and Modules
+10. No other external libraries
+11. Custom Utils functions (Format Phone (111) 111–1111), & localstorage, ... etc)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Screen Shots
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+<img width="1440" alt="Screenshot 2021-04-11 at 11 06 26 PM" src="https://user-images.githubusercontent.com/3702438/114315059-d0d4e400-9b1a-11eb-86a9-a55a7dc6877d.png">
+<img width="1440" alt="Screenshot 2021-04-11 at 11 07 04 PM" src="https://user-images.githubusercontent.com/3702438/114315062-d3373e00-9b1a-11eb-8cc4-7c6b052a3848.png">
+<img width="1440" alt="Screenshot 2021-04-11 at 11 07 30 PM" src="https://user-images.githubusercontent.com/3702438/114315063-d5010180-9b1a-11eb-8f7c-4d46f7d9a0e5.png">
